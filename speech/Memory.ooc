@@ -2,7 +2,7 @@
 
 Memory: class {
 
-	load: func(file: String){
+	load: func(file: String) {
 		printf ("Loading memory from %s ...\n",file)
 		printf ("Successfuly loaded\n")
 	}
