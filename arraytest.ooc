@@ -1,14 +1,20 @@
 import structs/ArrayList
 
 main: func {
-	truc := ArrayList<Int> new(20)
-	for(i in 1..10){
+	
+	max := 10
+	
+	truc := ArrayList<Int> new()
+	for(i in 0..max){
 		truc add(i)
 	}
+	
 	val := truc get(0)
 	("Val is " + val) println()
-	for(i in 1..10){
-		printf("truc(%d): %d", i, truc get(i) as Int)
+	
+	for(i in 0..truc size()){
+		printf("truc(%d): %d, ", i, truc get(i) as Int)
 	}
+	println()
 	
 }
