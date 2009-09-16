@@ -1,8 +1,8 @@
 
 
 ChainedList: class<T> {
-	root: Node<T>
-	last: Node<T>
+	root: Node
+	last: Node
 	length: Int
 	it : Node<T>
 	
@@ -41,7 +41,6 @@ ChainedList: class<T> {
 	getn: func(n: Int) -> Node{
 		current := root
 		i := 0
-		printf("current: %p\n",current)
 		current = current next
 		while(current != null){
 			if(i == n){
@@ -76,7 +75,7 @@ ChainedList: class<T> {
 		current = current next
 		
 		while(current != null){
-			//( i + ": " + current data) println()
+			(i + ": " + current data as String) println()
 			i += 1
 			current = current next
 		}
@@ -101,12 +100,13 @@ Node: class<T>{
 	init: func {
 		prev = null
 		next = null
-		data = null
+		data = gc_malloc(T size)
 	}
 	
-	init: func ~withParams(p,n: Node<T>*, d: T)  {
+	init: func ~withParams(p,n: Node<T>, d: T)  {
 		prev = p
 		next = n
+		data = gc_malloc(T size)
 		data = d
 	}
 	
