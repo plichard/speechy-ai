@@ -13,7 +13,7 @@ main: func {
 	("Val is " + val) println()
 	
 	for(i in 0..truc size()){
-		printf("truc(%d): %d, ", i, truc get(i) as Int)
+		printf("truc(%d): %d, ", i, truc get(i))
 	}
 	println()
 	
