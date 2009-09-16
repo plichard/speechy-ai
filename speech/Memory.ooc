@@ -12,7 +12,9 @@ Memory: class {
 		printf ("Successfuly saved\n")
 	}
 
-
+	init: func {
+	}
+	
 	/* Adds a name into the memory: returns the id of the new object,
 	 * 								-1 if the name already existed 
 	 */
@@ -49,7 +51,7 @@ Memory: class {
 }
 
 main: func {
-	mem1 := new Memory
+	mem1 := Memory new()
 	printf("Initiating memory...\n")
 	mem1 load("Beeuh")
 	mem1 save("Beuuh")
