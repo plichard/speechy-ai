@@ -1,13 +1,13 @@
 
 
 ChainedList: class<T> {
-	root: Node<T>
-	last: Node<T>
+	root: Node
+	last: Node
 	length: Int
-	it : Node<T>
+	it : Node
 	
 	init: func {
-		root = Node new()
+		root = Node<T> new()
 		last = root
 		length = 0
 		it = root
