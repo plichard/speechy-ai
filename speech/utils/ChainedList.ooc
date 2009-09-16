@@ -4,10 +4,10 @@ ChainedList: class<T> {
 	root: Node
 	last: Node
 	length: Int
-	it : Node
+	it : Node<T>
 	
 	init: func {
-		root = Node<T> new()
+		root = Node new()
 		last = root
 		length = 0
 		it = root
