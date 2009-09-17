@@ -113,7 +113,7 @@ Node: class<T>{
 }
 
 
-main: func {
+/*main: func {
 	list := ChainedList<String> new()
 	for(i in 0..10){
 		list add(i repr())
@@ -124,4 +124,4 @@ main: func {
 	list print(); "--------------------------------------------------" println()
 	list del(6)
 	list print(); "--------------------------------------------------" println()
-}
+}*/

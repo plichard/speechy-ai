@@ -1,4 +1,5 @@
 //import structs.HashTable
+import Term
 
 Memory: class {
 
@@ -58,4 +59,7 @@ main: func {
 	mem1 add("Cacou")
 	mem1 get("Cacou")
 	printf ("mem1 get(Cacou): %d\n",mem1 get("cacou"))
+	
+	t1 := Term new()
+	printf("exp(0) = %f \n",exp(-2.))
 }
